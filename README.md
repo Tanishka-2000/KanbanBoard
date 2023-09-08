@@ -43,9 +43,16 @@ npm run dev
 Here is the live working demo [https://tanishka-kanban-board.netlify.app/](https://tanishka-kanban-board.netlify.app/)
 
 ## Illustration
-![Home page in light mode](/public/board_light.png)
-![Home page in light mode](board_light.png)
-![Home page in light mode](public/board_light.png)
+### Login/Signup page
+![login page](public/login.png)
+### Home Page in Light mode
+![Home page in light mode](public/home_light.png)
+### Home Page in Dark mode
+![Home page in dark mode](public/home_dark.png)
+### Board route in Light mode
+![Board route in light mode](public/Board_light.png)
+### Board route in Light mode
+![Board route in dark mode](public/Board_dark.png)
 
 ## Features
 + A login/signup screen.
