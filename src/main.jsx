@@ -78,7 +78,7 @@ root.render(<RouterProvider router={router} />);
 async function createCard({ params, request }){
   const formData = await request.formData();
 
-  const response = await fetch("http://localhost:4000/board/" + params.boardId + "/column/" + params.columnId + "/cards", {
+  const response = await fetch("https://kanban-kou1.onrender.com/board/" + params.boardId + "/column/" + params.columnId + "/cards", {
       method: 'POST',
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -100,7 +100,7 @@ async function createCard({ params, request }){
 async function editCard({ params, request }){
   const formData = await request.formData();
 
-  const response = await fetch("http://localhost:4000/board/" + params.boardId + "/column/" + params.columnId + "/cards/" + params.cardId, {
+  const response = await fetch("https://kanban-kou1.onrender.com/board/" + params.boardId + "/column/" + params.columnId + "/cards/" + params.cardId, {
       method: 'PUT',
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -120,7 +120,7 @@ async function editCard({ params, request }){
 
 async function deleteCard({ params }){
 
-  const response = await fetch("http://localhost:4000/board/" + params.boardId + "/column/" + params.columnId + "/cards/" + params.cardId, {
+  const response = await fetch("https://kanban-kou1.onrender.com/board/" + params.boardId + "/column/" + params.columnId + "/cards/" + params.cardId, {
       method: 'delete',
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -134,7 +134,7 @@ async function createColumn({ params, request }){
 
   const formData = await request.formData();
 
-  const response = await fetch("http://localhost:4000/board/" + params.boardId + "/columns", {
+  const response = await fetch("https://kanban-kou1.onrender.com/board/" + params.boardId + "/columns", {
       method: 'POST',
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -148,7 +148,7 @@ async function createColumn({ params, request }){
 async function editColumn({ params, request }){
   const formData = await request.formData();
 
-  const response = await fetch("http://localhost:4000/board/" + params.boardId + "/column/" + params.columnId, {
+  const response = await fetch("https://kanban-kou1.onrender.com/board/" + params.boardId + "/column/" + params.columnId, {
       method: 'PUT',
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -162,7 +162,7 @@ async function editColumn({ params, request }){
 
 async function deleteColumn({ params }){
 
-  const response = await fetch("http://localhost:4000/board/" + params.boardId + "/column/" + params.columnId, {
+  const response = await fetch("https://kanban-kou1.onrender.com/board/" + params.boardId + "/column/" + params.columnId, {
       method: 'delete',
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -173,9 +173,9 @@ async function deleteColumn({ params }){
 }
 
 async function createBoard({ request }){
-  console.log('in action')
   const formData = await request.formData();
-  const response = await fetch('http://localhost:4000/board/new',{
+
+  const response = await fetch('https://kanban-kou1.onrender.com/board/new',{
     method: 'POST',
     headers: {
       "Content-type": "application/json; charset=UTF-8",
@@ -189,10 +189,8 @@ async function createBoard({ request }){
 
 async function editBoard({ params, request}){
   const formData = await request.formData();
-  console.log('here');
-  console.log({ name: formData.get('name'), color: formData.get('color')});
 
-  const response = await fetch("http://localhost:4000/board/" + params.boardId, {
+  const response = await fetch("https://kanban-kou1.onrender.com/board/" + params.boardId, {
       method: 'PUT',
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -206,7 +204,7 @@ async function editBoard({ params, request}){
 
 async function deleteBoard({ params }){
 
-  const response = await fetch("http://localhost:4000/board/" + params.boardId, {
+  const response = await fetch("https://kanban-kou1.onrender.com/board/" + params.boardId, {
       method: 'delete',
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -217,9 +215,9 @@ async function deleteBoard({ params }){
 }
 
 async function changeColumn({ params, request }){
-  
   const formData = await request.formData();
-  const response = await fetch("http://localhost:4000/board/" + params.boardId + '/changeColumn', {
+  
+  const response = await fetch("https://kanban-kou1.onrender.com/board/" + params.boardId + '/changeColumn', {
     method: 'post',
     headers: {
       "Content-type": "application/json; charset=UTF-8",

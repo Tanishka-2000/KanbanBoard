@@ -2,9 +2,9 @@
 Manage your work at personal and/or organizational level using kanban board.
 
 ## Table of Contents
-+ [General Info] (#general-info)
-+ [Technologies] (#technologies)
-+ [Setup] (#setup)
++ [General Info](#general-info)
++ [Technologies](#technologies)
++ [Setup](#setup)
 + [Features](#features)
 
 ## General Info

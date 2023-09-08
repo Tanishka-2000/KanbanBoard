@@ -9,7 +9,7 @@ function Login() {
   const navigate = useNavigate();
   
   const logIn = (action) => {
-    fetch('http://localhost:4000/' + action ,{
+    fetch('https://kanban-kou1.onrender.com/' + action ,{
       method: 'POST',
       headers: {
         "Content-type": "application/json; charset=UTF-8"

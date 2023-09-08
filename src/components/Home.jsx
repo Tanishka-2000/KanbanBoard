@@ -9,8 +9,8 @@ import { useLoaderData, Form, Link, useSubmit } from "react-router-dom";
 import { colors } from "./colors";
 
 export async function loader(){
-  console.log("in loader")
-  const response = await fetch('http://localhost:4000/board/all',{
+  
+  const response = await fetch('https://kanban-kou1.onrender.com/board/all',{
     method: 'GET',
     headers: {
       "Content-type": "application/json; charset=UTF-8",
@@ -29,7 +29,6 @@ export default function Home() {
   const [action, setAction] = useState("");
   const boards = useLoaderData();
   const submit = useSubmit();
-  console.log(boards);
 
   const handleClose = () => {
     setOpen(false);

@@ -7,7 +7,7 @@ import ColumnForm from './ColumnForm';
 
 export async function loader({ params }){
 
-    const response = await fetch("http://localhost:4000/board/" + params.boardId, {
+    const response = await fetch("https://kanban-kou1.onrender.com/board/" + params.boardId, {
         method: 'GET',
         headers: {
           "Content-type": "application/json; charset=UTF-8",
@@ -21,7 +21,6 @@ export async function loader({ params }){
 function Board() {
     const [open, setOpen] = useState(false);
     const board = useLoaderData();
-    console.log(board);
 
   return (
     <Stack spacing={2} padding={2}>

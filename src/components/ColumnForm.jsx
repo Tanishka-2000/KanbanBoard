@@ -5,7 +5,7 @@ import { Form } from 'react-router-dom';
 import { colors } from './colors';
 
 function ColumnForm({ open, handleClose, data, action}) {
-  console.log(action)
+
   return (
     <Dialog open={open} onClose={handleClose} fullWidth maxWidth='sm'>
     <DialogTitle>{data.name ? 'Edit List' : 'Add New List'}</DialogTitle>
