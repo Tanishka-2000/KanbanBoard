@@ -5,6 +5,7 @@ Manage your work at personal and/or organizational level using kanban board.
 + [General Info](#general-info)
 + [Technologies](#technologies)
 + [Setup](#setup)
++ [Demo](#demo)
 + [Features](#features)
 
 ## General Info
@@ -35,7 +36,10 @@ npm install
 # start app
 npm run dev
 ```
-> To see the APIs used by this app go to https://github.com/Tanishka-2000/kanbanBoard_api
+> To see the APIs used by this app go to [https://github.com/Tanishka-2000/kanbanBoard_api](https://github.com/Tanishka-2000/kanbanBoard_api)
+
+## Demo
+Here is the live working demo [https://tanishka-kanban-board.netlify.app/login](https://tanishka-kanban-board.netlify.app/login)
 
 ## Features
 + A login/signup screen.
