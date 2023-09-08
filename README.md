@@ -50,9 +50,9 @@ Here is the live working demo [https://tanishka-kanban-board.netlify.app/](https
 ### Home Page in Dark mode
 ![Home page in dark mode](public/home_dark.png)
 ### Board route in Light mode
-![Board route in light mode](public/Board_light.png)
-### Board route in Light mode
-![Board route in dark mode](public/Board_dark.png)
+![Board route in light mode](public/board_light.png)
+### Board route in Dark mode
+![Board route in dark mode](public/board_dark.png)
 
 ## Features
 + A login/signup screen.
